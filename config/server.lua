@@ -3,8 +3,8 @@ return {
     identifier = 'discord',
     moneytype = 'cash',
     tracky = {
-        serverId = '123456',
-        serverKey = 'xxxxxxxxxxxxxxxxx',
+        serverId = GetConvar("SERVER_ID", "0"),
+        serverKey = GetConvar("SERVER_KEY", "XXXXXXXXXXXX"),
         endpoints = {
             vote = 'https://trackyserver.com/server/%s',
             status = 'https://api.trackyserver.com/vote/?action=status&key=%s&%sid=%s',
